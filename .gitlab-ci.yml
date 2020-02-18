@@ -28,8 +28,8 @@ tests:
 include:
   - template: Dependency-Scanning.gitlab-ci.yml
   - template: SAST.gitlab-ci.yml
+  - template: License-Management.gitlab-ci.yml
   # - template: Code-Quality.gitlab-ci.yml
-
 
 sast:
   variables:
@@ -42,7 +42,6 @@ dependency_scanning:
     DS_DISABLE_DIND: "true"
   tags:
     - docker
-
 # code_quality:
 #   tags:
 #     - docker
