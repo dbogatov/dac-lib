@@ -42,6 +42,10 @@ dependency_scanning:
     DS_DISABLE_DIND: "true"
   tags:
     - docker
+
+license_management:
+  tags:
+    - docker
 # code_quality:
 #   tags:
 #     - docker
